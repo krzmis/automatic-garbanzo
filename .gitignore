@@ -1,3 +1,9 @@
 ######## INTELLIJ #########
 **.idea/
+
+######## GRADLE #########
 **.gradle/
+**/gradle/wrapper/
+build/
+**repos/
+**/logs/

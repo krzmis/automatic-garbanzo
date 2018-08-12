@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <File name="Simple" fileName="logs/${date:yyyy-MM-d-HHmmss}/${date:yyyy-MM-d-HHmmss}.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n" />
+        </File>
+
+    </Appenders>
+    <Loggers>
+        <Root level="TRACE">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="Simple"/>
+        </Root>
+    </Loggers>
+</Configuration>
