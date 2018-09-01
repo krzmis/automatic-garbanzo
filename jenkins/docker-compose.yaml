@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    privileged: true
+    user: root
+    ports:
+    - "50000:50000"
+    - "4445:8080"
+    volumes:
+    - /var/jenkins_home:/var/jenkins_home

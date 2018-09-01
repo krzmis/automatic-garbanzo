@@ -26,7 +26,7 @@ abstract class TestBase {
 //        capabilities.setCapability("browserName", "firefox")
         capabilities.setCapability("browserName", "chrome")
         capabilities.setCapability("platformName", Platform.ANDROID)
-        capabilities.setCapability("platformName", Platform.LINUX)
+//        capabilities.setCapability("platformName", Platform.LINUX)
         capabilities.setCapability("deviceName", "OnePlus Two")
 //        capabilities.setCapability("appWaitActivity", "SplashActivity, SplashActivity,OtherActivity, *, *.SplashActivity")
 //        capabilities.setCapability("appPackage", "com.android.chrome")

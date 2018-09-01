@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="automatic-garbanzo" verbose="10">
+    <parameter name="selenium.host" value="localhost"/>
+    <parameter name="report.config" value="TestNGResources/extent-config.xml"/>
+    <!--Using Library http://www.vimalselvam.com/2016/11/28/testng-extent-report/-->
+    <listeners>
+        <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>
+    </listeners>
+    <test name="Git Hub Test">
+        <classes>
+            <class name="gitHub.GitHubTest"/>
+        </classes>
+    </test>
+</suite>
