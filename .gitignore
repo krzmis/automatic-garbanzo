@@ -6,5 +6,9 @@
 **/gradle/wrapper/
 build/
 **repos/
+/gradlew
+/gradlew.bat
+
+######## LOGS #########
 **/logs/
 **/selenium-grid/log

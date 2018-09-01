@@ -1,0 +1,19 @@
+#!/usr/bin/env groovy
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Checking Selenium Grid') {
+            steps {
+                echo 'Checking Selenium Grid'
+            }
+        }
+
+        stage('Running GitHub Test')
+        steps {
+            echo 'Running GitHub Test'
+            sh gradle test
+        }
+    }
+}
