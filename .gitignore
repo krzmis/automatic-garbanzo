@@ -7,3 +7,4 @@
 build/
 **repos/
 **/logs/
+**/selenium-grid/log

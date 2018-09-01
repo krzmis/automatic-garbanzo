@@ -6,7 +6,8 @@ class GitHubTest : GitHubTestHelpers() {
 
     @Test
     fun runTestOnMainPage() {
-    checkMainPageTitle()
+        checkMainPageTitle()
+        softAssert.assertAll()
     }
 
 }
